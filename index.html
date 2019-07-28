@@ -1,15 +1,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Pweb</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
+	<title>Portifólio</title>
 	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
-	<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
-
 <body>
 	<div class="formPri">
 
@@ -26,7 +21,6 @@
 						<span class="byline">Formado em análise e desenvolvimeto de sistemas pela Fatec-So(não de primeira). </span>
 				</div>
 				<p>” A sabedoria dos homens é proporcional não só a sua experiência, mas à sua capacidade de adquirir experiência. ” </p>
-
 			</div>
 		</div>
 		<div id="page" class="container">
@@ -51,13 +45,15 @@
 				</div>
 			</div>
 		</div>
-		<div id="extra" class="container">
+			<div id="page" class="container">
+			<div class="title">
+				<h4>Projeto atual</h4>
+				<il>Chat em Materialize consumindo banco atravé de socket.io </il><a style="cursor: pointer;" onclick="swal()">clique aqui</a>
+			</div>
 			<div class="title">
 				<h1>Atividades extra curricular</h1>
-
 			</div>
 			<div id="three-column">
-
 				<div class="texto">
 					<div class="box">
 						<il>Mini Hackathon Global DevOps Bootcamp 2019 - Sorocaba <br /></il>
@@ -71,37 +67,50 @@
 						<il>Pacote Office Advance CCI - Itaporanga-SP<br /></il>
 					</div>
 				</div>
-
 			</div>
 			<div id="page" class="container">
 				<ul class="actions">
-					<li><a href="#" class="button"> Início </a></li>
+					<li><a href="#"class="button">Início</a></li>
 				</ul>
 			</div>
-
 			<div id="copyright" class="container">
-				<p>&copy; Untitled. All rights reserved. | Repositório GIT -> <a
-						href="https://github.com/JonyAlan">"Jony Alan"</a> <a href="download/Jony-Alan.pdf">"Download do
-						Currículo Aqui"</a></p>
+				<p>&copy; Untitled. All rights reserved. | Repositório GIT -> <a href="https://github.com/JonyAlan">"Jony Alan"</a> <a href="download/Jony-Alan.pdf">"Download do Currículo Aqui"</a></p>
 			</div>
-
-		</div>
+	</div>
 </body>
-<script> src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"</script>
-
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"> </script>
 </html>
+<script>
+	function swal() {
+		Swal.fire({
+			imageUrl: 'images/chat.png',
+			imageHeight: 250,
+			imageWidth: 500,
+		    text: 'Em breve estará disponível aqui',
+		})
+
+	}
+</script>
 <style>
+	html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
 .img{
 	width: 40%;
 	height: 40%;
 	opacity:1.15 !important;
-
-
 }
 .card{
 	opacity:0.15;
 	-moz-opacity: 0.65;
 	filter: alpha(opacity=65);
+}
+h1{
+	font-size: 38px !important;
 }
 
 </style>
